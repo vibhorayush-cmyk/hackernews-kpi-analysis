@@ -15,5 +15,4 @@ Trending Score
 Python (Pandas, BeautifulSoup)
 Power BI
 🔹 Output
-
-Clean dataset used for dashboard visualization.
+Clean dataset used for dashboard visualization

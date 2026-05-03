@@ -1,5 +1,4 @@
 This project analyzes engagement trends from Hacker News using Python.
-
 🔹 Key Features
 Web scraping using Python
 Data cleaning and transformation

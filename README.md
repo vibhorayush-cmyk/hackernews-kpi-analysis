@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-This project analyzes Hacker News content performance to identify engagement patterns, trending topics, and high-performing posts within online technology communities.
+This project analyzes Hacker News content performance to identify engagement patterns, high-performing posts, and content trends within online technology communities.
 
-Using Python, SQL, SQLite, and data visualization, the project transforms raw Hacker News data into actionable content intelligence through automated data cleaning, KPI analysis, feature engineering, and SQL-based analytics.
+Using Python, SQL, SQLite, and data visualization, the project transforms raw Hacker News data into actionable content intelligence through automated data cleaning, feature engineering, KPI analysis, SQL querying, and visualization.
 
 The project simulates a real-world analytics workflow commonly used in business intelligence and data analytics environments.
 
@@ -78,19 +78,26 @@ news-kpi/
 │   ├── raw/
 │   └── cleaned/
 │
-├── visuals/
-│
 ├── sql/
 │   └── engagement_queries.sql
 │
-├── main.py
-├── data_cleaning.py
-├── feature_engineering.py
-├── kpi_analysis.py
-├── visualization.py
-├── create_database.py
-├── run_queries.py
+├── visuals/
+│   ├── top_posts.png
+│   ├── engagement_distribution.png
+│   └── title_length_analysis.png
+│
+├── src/
+│   ├── main.py
+│   ├── data_cleaning.py
+│   ├── feature_engineering.py
+│   ├── kpi_analysis.py
+│   ├── visualization.py
+│   ├── create_database.py
+│   └── run_queries.py
+│
 ├── hackernews.db
+├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
@@ -174,7 +181,7 @@ The project automatically generates analytical visualizations including:
 
 - Top-performing posts chart
 - Engagement distribution analysis
-- KPI performance visuals
+- Title length vs engagement analysis
 
 ### Top Performing Hacker News Posts
 
@@ -185,6 +192,12 @@ The project automatically generates analytical visualizations including:
 ### Engagement Distribution
 
 ![Engagement Distribution](visuals/engagement_distribution.png)
+
+---
+
+### Title Length vs Engagement
+
+![Title Length Analysis](visuals/title_length_analysis.png)
 
 ---
 
@@ -227,6 +240,40 @@ Viral Posts: 3
 Average Title Length: 51.73
 
 Pipeline completed successfully.
+```
+
+---
+
+## How to Run
+
+### Clone Repository
+
+```bash
+git clone <repository-url>
+```
+
+### Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run Analytics Pipeline
+
+```bash
+python src/main.py
+```
+
+### Create SQLite Database
+
+```bash
+python src/create_database.py
+```
+
+### Run SQL Queries
+
+```bash
+python src/run_queries.py
 ```
 
 ---

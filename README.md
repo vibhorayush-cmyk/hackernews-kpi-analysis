@@ -135,6 +135,19 @@ SQL queries were used to:
 
 ---
 
+## Custom KPI Engineering
+
+To better measure community interaction, custom engagement metrics were developed:
+
+### Discussion Intensity
+Measures how discussion-heavy a post is relative to popularity.
+
+### Viral Engagement Score
+Combines comments and scores into a weighted engagement KPI to estimate overall interaction impact.
+
+
+------
+
 ## Future Improvements
 
 - NLP-based topic modeling
